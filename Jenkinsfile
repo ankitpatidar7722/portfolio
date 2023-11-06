@@ -10,7 +10,7 @@ pipeline {
                     doGenerateSubmoduleConfigurations: false, 
                     extensions: [], 
                     submoduleCfg: [], 
-                    userRemoteConfigs: [[url: 'https://github.com/ankitpatidar7722/amazon.git']]
+                    userRemoteConfigs: [[url: 'https://github.com/ankitpatidar7722/portfolio.git']]
                 ])
             }
         }
@@ -19,7 +19,7 @@ pipeline {
             steps {
                 // Copy the code to the Apache document root directory
                 bat script: '''
-                    xcopy /s /e /y "C:\\Users\\Hp\\OneDrive\\Desktop\\amazon" "C:\\Apache24\\htdocs"
+                    xcopy /s /e /y "C:\\Users\\Hp\\OneDrive\\Desktop\\portfolio" "C:\\Apache24\\htdocs"
                 '''
             }
         }
